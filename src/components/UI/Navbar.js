@@ -210,7 +210,7 @@ export default function Navbar() {
             underline="none"
             className={classes.title}
           >
-            SnappyTheme
+            OneSnappy
           </MuiLink>
           {matchesXS ? drawer : tabs}
         </Toolbar>

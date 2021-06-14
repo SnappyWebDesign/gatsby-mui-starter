@@ -59,6 +59,7 @@ function ProductHero(props) {
   useEffect(() => {
     setInitiated(true)
   }, [])
+
   return (
     <ProductHeroLayout
       backgroundClassName={
