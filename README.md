@@ -54,6 +54,8 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 - [Material Icons](https://material-ui.com/components/icons/)
 - [React Helmet](https://github.com/nfl/react-helmet)
 - [Normalize.css](https://necolas.github.io/normalize.css/)
+- [React Final Form](https://final-form.org/react)
+- [Validator](https://www.npmjs.com/package/validator)
 
 **Gatsby Plugins**
 

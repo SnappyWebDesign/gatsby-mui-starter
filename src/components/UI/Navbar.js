@@ -1,7 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
-
 import AppBar from "@material-ui/core/AppBar"
 import { useTheme, makeStyles } from "@material-ui/core/styles"
 import Toolbar from "@material-ui/core/Toolbar"

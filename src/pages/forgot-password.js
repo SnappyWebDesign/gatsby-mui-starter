@@ -1,9 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/UI/Layout"
 import { makeStyles } from "@material-ui/core/styles"
-import Grid from "@material-ui/core/Grid"
-import MuiLink from "@material-ui/core/Link"
 import { Field, Form, FormSpy } from "react-final-form"
 import Typography from "../components/Utils/Typography"
 import AppForm from "../components/AppForm"
@@ -25,15 +22,12 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-function RegisterPage() {
+export default function ForgotPassword() {
   const classes = useStyles()
   const [sent, setSent] = React.useState(false)
 
   const validate = values => {
-    const errors = required(
-      ["firstName", "lastName", "email", "password"],
-      values
-    )
+    const errors = required(["email", "password"], values)
 
     if (!errors.email) {
       const emailError = email(values.email, values)
@@ -54,12 +48,11 @@ function RegisterPage() {
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Sign Up
+            Forgot your password?
           </Typography>
           <Typography variant="body2" align="center">
-            <MuiLink component={Link} to="/login" underline="always">
-              Already have an account?
-            </MuiLink>
+            {"Enter your email address below and we'll " +
+              "send you a link to reset your password."}
           </Typography>
         </React.Fragment>
         <Form
@@ -69,30 +62,8 @@ function RegisterPage() {
         >
           {({ handleSubmit2, submitting }) => (
             <form onSubmit={handleSubmit2} className={classes.form} noValidate>
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
-                  <Field
-                    autoFocus
-                    component={RFTextField}
-                    autoComplete="fname"
-                    fullWidth
-                    label="First name"
-                    name="firstName"
-                    required
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <Field
-                    component={RFTextField}
-                    autoComplete="lname"
-                    fullWidth
-                    label="Last name"
-                    name="lastName"
-                    required
-                  />
-                </Grid>
-              </Grid>
               <Field
+                autoFocus
                 autoComplete="email"
                 component={RFTextField}
                 disabled={submitting || sent}
@@ -101,17 +72,7 @@ function RegisterPage() {
                 margin="normal"
                 name="email"
                 required
-              />
-              <Field
-                fullWidth
-                component={RFTextField}
-                disabled={submitting || sent}
-                required
-                name="password"
-                autoComplete="current-password"
-                label="Password"
-                type="password"
-                margin="normal"
+                size="large"
               />
               <FormSpy subscription={{ submitError: true }}>
                 {({ submitError }) =>
@@ -125,10 +86,11 @@ function RegisterPage() {
               <FormButton
                 className={classes.button}
                 disabled={submitting || sent}
+                size="large"
                 color="secondary"
                 fullWidth
               >
-                {submitting || sent ? "In progress…" : "Sign Up"}
+                {submitting || sent ? "In progress…" : "Send reset link"}
               </FormButton>
             </form>
           )}
@@ -137,5 +99,3 @@ function RegisterPage() {
     </Layout>
   )
 }
-
-export default RegisterPage

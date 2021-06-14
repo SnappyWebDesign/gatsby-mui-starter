@@ -170,6 +170,19 @@ export default function Footer() {
               </MuiLink>
             </Typography>
           </Grid>
+          <Grid item xs={12}>
+            <Typography variant="caption">
+              {"Theme ported by "}
+              <MuiLink
+                href="https://snappywebdesign.net"
+                rel="tag"
+                title="Snappy Web Design"
+                target="_blank"
+              >
+                Snappy Web Design
+              </MuiLink>
+            </Typography>
+          </Grid>
         </Grid>
       </Container>
     </Typography>
