@@ -10,6 +10,7 @@ module.exports = {
     title: `Gatsby Material-UI Starter`,
     description: `Gatsby/Material-UI Template via SnappyWebDesign.net`,
     author: `@snappy_web`,
+    siteUrl: `https://muitemplate.netlify.app`,
   },
 
   plugins: [
@@ -45,6 +46,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
   ],
 }
