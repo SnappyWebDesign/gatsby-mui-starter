@@ -7,6 +7,9 @@
 <h1 align="center">
   Snappy Web Design's Gatsby + Material-UI Starter
 </h1>
+* https://onesnappy.gatsbyjs.io/
+* https://onesnappy.netlify.app/
+
 
 Start your project with this Material-UI template. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
