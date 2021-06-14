@@ -7,12 +7,30 @@
 <h1 align="center">
   Snappy Web Design's Gatsby + Material-UI Starter
 </h1>
+Demo's (Links are same site)
+
+- https://onesnappy.gatsbyjs.io/
+- https://onesnappy.netlify.app/
 
 Start your project with this Material-UI template. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
-<!-- ## 🚀 Quick start
+## 🚀 Quick start
+
+### 1. Gatsby Cloud
+
+Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/SnappyWebDesign/gatsby-mui-starter)
+
+### 2. Netlify
+
+Deploy this starter with one click on [Netlify](https://www.gatsbyjs.com/cloud/):
+
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">](https://app.netlify.com/start/deploy?repository=https://github.com/SnappyWebDesign/gatsby-mui-starter)
+
+### 3. CLI
 
 1.  **Create a Gatsby site.**
 
@@ -20,7 +38,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     ```shell
     # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    gatsby new my-onesnappy-starter https://github.com/SnappyWebDesign/gatsby-mui-starter
     ```
 
 1.  **Start developing.**
@@ -28,7 +46,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-hello-world-starter/
+    cd my-onesnappy-starter/
     gatsby develop
     ```
 
@@ -38,13 +56,13 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time! -->
+    Open the `my-onesnappy-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 # 🌟 Features
 
 ### 🖥️ Production Add-Ons Out of the Box
 
-- \<head> / SEO attributes
+- Meta / SEO attributes
 - Automatic sitemap generation
 - Automatic robots.txt file generation
 
