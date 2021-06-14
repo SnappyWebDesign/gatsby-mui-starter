@@ -31,6 +31,7 @@ const styles = theme => ({
     marginTop: theme.spacing(2),
   },
   dynamicBackground: {
+    backgroundImage: `url(${PoolPlaceholder})`,
     position: "absolute",
     top: 0,
     left: 0,
@@ -57,13 +58,18 @@ function ProductHero(props) {
 
   useEffect(() => {
     setInitiated(true)
-  })
+  }, [])
   return (
     <ProductHeroLayout
       backgroundClassName={
         dynamic ? classes.dynamicBackground : classes.background
       }
     >
+      <img
+        src={PoolPlaceholder}
+        style={{ display: "none" }}
+        alt="increase priority"
+      />
       {/* Increase the network loading priority of the background image. */}
       {!dynamic && (
         <img
@@ -75,7 +81,11 @@ function ProductHero(props) {
       {dynamic && (
         <>
           {!initiated && (
-            <img src={PoolPlaceholder} alt="pool video placeholder" />
+            <img
+              src={PoolPlaceholder}
+              alt="pool video placeholder"
+              className={classes.dynamicVideo}
+            />
           )}
           <video
             src={PoolVideo}
