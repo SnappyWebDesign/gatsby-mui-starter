@@ -40,17 +40,32 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time! -->
 
+# 🌟 Features
+
+### 🖥️ Production Add-Ons Out of the Box
+
+- \<head> / SEO attributes
+- Automatic sitemap generation
+- Automatic robots.txt file generation
+
 ## 🤝 Dependencies
 
 - [Material-UI Core v4.11.4](https://material-ui.com/getting-started/installation/)
+- [Material Icons](https://material-ui.com/components/icons/)
 - [React Helmet](https://github.com/nfl/react-helmet)
-  Gatsby Plugins
+- [Normalize.css](https://necolas.github.io/normalize.css/)
+
+**Gatsby Plugins**
+
 - [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image)
 - [gatsby-plugin-sharp](https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp/)
 - [gatsby-transformer-sharp](https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/)
 - [gatsby-source-filesystem](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/)
 - [gatsby-plugin-material-ui](https://www.gatsbyjs.com/plugins/gatsby-plugin-material-ui/)
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/)
+- [gatsby-plugin-google-fonts-with-attributes](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-fonts-with-attributes/)
+- [gatsby-plugin-sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/)
+- [gatsby-plugin-robots-txt](https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/)
 
 <!-- ## 🚀 Quick start (Gatsby Cloud)
 

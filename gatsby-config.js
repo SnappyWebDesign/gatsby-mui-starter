@@ -25,5 +25,27 @@ module.exports = {
     },
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
+    {
+      // resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-with-attributes`,
+      options: {
+        fonts: [
+          // `roboto slab\:300,400,400i,500,600,700,800,900`,
+          // `roboto\::300,400,400i,500,600,700,800,900`,
+          `roboto condensed\::300,400,400i,500,600,700,800,900`,
+          `work sans\::300,400,400i,500,600,700,800,900`,
+          // you can also specify font weights and styles
+        ],
+        display: "swap",
+        attributes: {
+          rel: "preload",
+          as: "font",
+          // rel: "stylesheet preload prefetch",
+          // as: "style",
+        },
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
   ],
 }
