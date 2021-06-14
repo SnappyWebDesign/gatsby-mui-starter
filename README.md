@@ -1,5 +1,8 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
+<a href='https://snappywebdesign.net/' style='font-size: 10px;'>by Snappy Web Design</a>
+<br />
+<br />
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="./static/favicon.ico" width="60" />
   </a>
