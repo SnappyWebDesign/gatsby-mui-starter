@@ -7,10 +7,11 @@
 <h1 align="center">
   Snappy Web Design's Gatsby + Material-UI Starter
 </h1>
-Demo's (Links are same site)
+Demo's (First 2 Links are same)
 
-- https://onesnappy.gatsbyjs.io/
-- https://onesnappy.netlify.app/
+- https://onesnappy.gatsbyjs.io/ via Gatsby Cloud
+- https://onesnappy.netlify.app/ via Netlify
+- View on [CodeSandbox.io](https://codesandbox.io/s/onesnappy-material-ui-gatsby-templatestarter-dcrqj)
 
 Start your project with this Material-UI template. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
@@ -59,6 +60,8 @@ Deploy this starter with one click on [Netlify](https://www.gatsbyjs.com/cloud/)
     Open the `my-onesnappy-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 # 🌟 Features
+
+Switch the background video to a static landing page by removing the `dynamic` prop passed to `<ProductHero dynamic />` in `index.js`
 
 ### 🖥️ Production Add-Ons Out of the Box
 
