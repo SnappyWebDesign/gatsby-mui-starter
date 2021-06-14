@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { withStyles } from "@material-ui/core/styles"
@@ -6,6 +6,7 @@ import Button from "./Utils/Button"
 import Typography from "./Utils/Typography"
 import ProductHeroLayout from "./ProductHeroLayout"
 import PoolVideo from "../assets/videos/dynamicProductHero.mp4"
+import PoolPlaceholder from "../assets/images/dynamicVidPlaceholder.jpg"
 
 const backgroundImage =
   "https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80"
@@ -52,7 +53,11 @@ const styles = theme => ({
 
 function ProductHero(props) {
   const { classes, dynamic } = props
+  const [initiated, setInitiated] = React.useState(false)
 
+  useEffect(() => {
+    setInitiated(true)
+  })
   return (
     <ProductHeroLayout
       backgroundClassName={
@@ -68,13 +73,18 @@ function ProductHero(props) {
         />
       )}
       {dynamic && (
-        <video
-          src={PoolVideo}
-          muted
-          loop
-          autoPlay
-          className={classes.dynamicVideo}
-        />
+        <>
+          {!initiated && (
+            <img src={PoolPlaceholder} alt="pool video placeholder" />
+          )}
+          <video
+            src={PoolVideo}
+            muted
+            loop
+            autoPlay
+            className={classes.dynamicVideo}
+          />
+        </>
       )}
       <Typography color="inherit" align="center" variant="h2" marked="center">
         Upgrade your Sundays
