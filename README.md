@@ -45,7 +45,6 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 ### 🖥️ Production Add-Ons Out of the Box
 
 - \<head> / SEO attributes
-- Automatic sitemap generation
 - Automatic robots.txt file generation
 
 ## 🤝 Dependencies
